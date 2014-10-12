@@ -17,7 +17,9 @@ def main():
 
     for i in range(0, numbers):
         target.write(generateRandom())
-        target.write(" ")
+        # We dont need an extra space at the end
+        if(i != numbers - 1):
+            target.write(" ")
 
     target.close()
 
