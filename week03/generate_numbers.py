@@ -1,6 +1,7 @@
 from random import randint
 import sys
 
+
 # The function that returns random number as a string
 def generateRandom():
     return str(randint(1, 1000))
@@ -17,6 +18,8 @@ def main():
     for i in range(0, numbers):
         target.write(generateRandom())
         target.write(" ")
+
+    target.close()
 
 if __name__ == '__main__':
     main()
