@@ -1,6 +1,3 @@
-from weapon import Weapon
-
-
 class Entity:
 
     def __init__(self, name, health):
@@ -37,9 +34,8 @@ class Entity:
             return True
         return False
 
-    def equip_weapon(self, new_weapon):
-        if isinstance(new_weapon, Weapon):
-            self.weapon = new_weapon
+    def equip_weapon(self, weapon):
+        self.weapon = weapon
 
     def attack(self):
         if not self.has_weapon():

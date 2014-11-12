@@ -1,3 +1,4 @@
+import weapon
 import orc
 import unittest
 
